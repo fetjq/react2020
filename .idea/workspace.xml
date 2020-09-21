@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a742b31-dae1-4e4d-99ad-4e354a69d4ea" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/actionCreate1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducerDo2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducerToDo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RouterIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RouterList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/delete-item-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/笔记.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actionCreateors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionCreateors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoListUi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoListUi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -76,7 +73,12 @@
       <option name="presentableId" value="Default" />
       <updated>1599702226965</updated>
       <workItem from="1600321250291" duration="26084000" />
-      <workItem from="1600435733141" duration="1675000" />
+      <workItem from="1600435733141" duration="1717000" />
+      <workItem from="1600659252375" duration="21000" />
+      <workItem from="1600696208789" duration="759000" />
+      <workItem from="1600697098405" duration="215000" />
+      <workItem from="1600697336937" duration="154000" />
+      <workItem from="1600697518324" duration="3277000" />
     </task>
     <task id="LOCAL-00001" summary="react learn">
       <created>1600419475196</created>
@@ -85,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600419475196</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="react learn">
+      <created>1600437473260</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600437473260</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,51 +105,59 @@
     <option name="LAST_COMMIT_MESSAGE" value="react learn" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="200" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600701964174">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="463" y="200" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1600701964174" />
+    <state x="573" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600696215785">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state x="573" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.730@0.23.1280.730" timestamp="1600696215785" />
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600345280383">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1600345280383" />
-    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1600419474893">
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1600437473032">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1600419474893" />
-    <state width="1259" height="154" key="GridCell.Tab.0.bottom" timestamp="1600435750685">
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1600437473032" />
+    <state width="1259" height="288" key="GridCell.Tab.0.bottom" timestamp="1600701847580">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="154" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1600435750685" />
+    <state width="1259" height="288" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1600701847580" />
     <state width="1212" height="154" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1600426412218" />
     <state width="1212" height="193" key="GridCell.Tab.0.bottom/47.23.1233.777@47.23.1233.777" timestamp="1600321465647" />
-    <state width="1259" height="154" key="GridCell.Tab.0.center" timestamp="1600435750683">
+    <state width="1259" height="288" key="GridCell.Tab.0.center" timestamp="1600701847579">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="154" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1600435750683" />
+    <state width="1259" height="288" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1600701847579" />
     <state width="1212" height="154" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1600426412217" />
     <state width="1212" height="193" key="GridCell.Tab.0.center/47.23.1233.777@47.23.1233.777" timestamp="1600321465646" />
-    <state width="1259" height="154" key="GridCell.Tab.0.left" timestamp="1600435750682">
+    <state width="1259" height="288" key="GridCell.Tab.0.left" timestamp="1600701847578">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="154" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1600435750682" />
+    <state width="1259" height="288" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1600701847578" />
     <state width="1212" height="154" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1600426412217" />
     <state width="1212" height="193" key="GridCell.Tab.0.left/47.23.1233.777@47.23.1233.777" timestamp="1600321465645" />
-    <state width="1259" height="154" key="GridCell.Tab.0.right" timestamp="1600435750685">
+    <state width="1259" height="288" key="GridCell.Tab.0.right" timestamp="1600701847579">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="154" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1600435750685" />
+    <state width="1259" height="288" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1600701847579" />
     <state width="1212" height="154" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1600426412218" />
     <state width="1212" height="193" key="GridCell.Tab.0.right/47.23.1233.777@47.23.1233.777" timestamp="1600321465647" />
     <state x="416" y="26" key="RollbackChangesDialog" timestamp="1600425469376">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="416" y="26" key="RollbackChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1600425469376" />
-    <state x="117" y="9" key="SettingsEditor" timestamp="1600345114799">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="117" y="31" key="SettingsEditor" timestamp="1600697492313">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
     <state x="117" y="9" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1600345114799" />
-    <state x="117" y="31" key="SettingsEditor/0.23.1280.730@0.23.1280.730" timestamp="1600342837608" />
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1600419480077">
+    <state x="117" y="31" key="SettingsEditor/0.23.1280.730@0.23.1280.730" timestamp="1600697492313" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1600437475173">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1600419480077" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1600437475173" />
     <state x="389" y="77" key="search.everywhere.popup" timestamp="1600338215576">
       <screen x="0" y="23" width="1280" height="730" />
     </state>

@@ -1,0 +1,46 @@
+1.自定义的组件必须首写字母要进行大写
+2.import React,{Component,Fragment } from 'react';Fragment用于替换包裹元素，类似于vue的template
+3.循环用map，并加key值
+4.React是禁止直接操作state；比如
+deleteItem(index){
+    let list = this.state.list
+    list.splice(index,1)
+    this.setState({
+        list:list
+    })
+}，
+不应该：
+deleteItem(index){
+    this.state.list.splice(index,1)
+    this.setState({
+        list:this.state.list
+    })
+}
+
+5.注释写法{/**/}或者{//}，需要用大括号包裹
+6.label加for应该用htmlFor
+7.jsx内不支持if else，但可以用三元，或者在return之前
+var loginButton;
+if (loggedIn) {
+loginButton = <LogoutButton />;
+} else {
+loginButton = <LoginButton />;
+ }
+
+ 8.类型验证，在最下面，不是类里面，写入import PropTypes from 'prop-types'。
+ XXCLASS.propTypes={
+     content:PropTypes.string,
+     deleteItem:PropTypes.func,
+     index:PropTypes.number.isRequired
+ }
+
+ 9.ref的坑，见jspang，会少一项服务，因为setState异步问题
+
+ 10.componentDidMount ajax
+
+ 11.react-transition-group动画组件
+
+ 12.组件接收传递过来的值的时候，可以在声明周期componentDidMount中进行，传递的值在this.props.match中。我们可以先打印出来,代码如下。
+ patch:自己定义的路由规则，可以清楚的看到是可以产地id参数的。
+ url: 真实的访问路径，这上面可以清楚的看到传递过来的参数是什么。
+ params：传递过来的参数，key和value值。

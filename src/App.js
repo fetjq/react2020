@@ -5,10 +5,27 @@ import {CHANGE_ACTION, ADD_ACTION, DELETE_ACTION, AXIOS_GET_LIST_BY_THUNK} from 
 import {ADD_ACTION2, CHANGE_ACTION2} from "./store/actionCreate1";
 import {connect} from 'react-redux'
 import {Button, Input, List} from "antd";
+import DeleteItemTest from './delete-item-test'
+import AppRouter from "./AppRouter";
 
 class App extends Component {
     constructor(props) {
         super(props);
+        this.state={
+            DeleteList:[
+                {name:1},
+                {name:2},
+                {name:3}
+            ]
+        }
+        this.deleteItemX=this.deleteItemX.bind(this);
+    }
+    deleteItemX(index){
+        let list = this.state.DeleteList
+        list.splice(index,1)
+        this.setState({
+            DeleteList:list
+        })
     }
 
     render() {
@@ -37,6 +54,17 @@ class App extends Component {
                         }
                     </ul>
                 </div>
+
+
+                <div>
+                    <DeleteItemTest DeleteList={this.state.DeleteList} deleteItemX={this.deleteItemX}></DeleteItemTest>
+
+                </div>
+                <div style={{border:'1px solid red',marginTop:'100px'}}>
+                    <AppRouter></AppRouter>
+                </div>
+
+
             </div>
         )
     }
@@ -47,6 +75,7 @@ class App extends Component {
 
     }
 }
+
 
 const stateProps = (state) => {
     return {
