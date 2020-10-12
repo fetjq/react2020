@@ -58,7 +58,6 @@ class App extends Component {
 
                 <div>
                     <DeleteItemTest DeleteList={this.state.DeleteList} deleteItemX={this.deleteItemX}></DeleteItemTest>
-
                 </div>
                 <div style={{border:'1px solid red',marginTop:'100px'}}>
                     <AppRouter></AppRouter>
