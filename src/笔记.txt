@@ -44,3 +44,42 @@ loginButton = <LoginButton />;
  patch:自己定义的路由规则，可以清楚的看到是可以产地id参数的。
  url: 真实的访问路径，这上面可以清楚的看到传递过来的参数是什么。
  params：传递过来的参数，key和value值。
+
+ 13.富文本innerHTML，react；用dangerouslySetInnerHtml属性，传入一股{__html:"xxx"}进去，如
+ <p dangerouslySetInnerHtml={__html:'<span><span>'}></p>
+
+ 14.setState同步和异步问题：
+setState 只在合成事件和钩子函数中是“异步”的，在原生事件和 setTimeout 中都是同步的。
+
+合成事件：就是react 在组件中的onClick等都是属于它自定义的合成事件
+
+原生事件：比如通过addeventListener添加的，dom中的原生事件
+
+setState的“异步”并不是说内部由异步代码实现，其实本身执行的过程和代码都是同步的，只是合成事件和钩子函数的调用顺序在更新之前，导致在合成事件和钩子函数中没法立马拿到更新后的值，形式了所谓的“异步”，当然可以通过第二个参数 setState(partialState, callback) 中的callback拿到更新后的结果。
+
+setState 的批量更新优化也是建立在“异步”（合成事件、钩子函数）之上的，在原生事件和setTimeout 中不会批量更新，在“异步”中如果对同一个值进行多次 setState ， setState 的批量更新策略会对其进行覆盖，取最后一次的执行，如果是同时 setState 多个不同的值，在更新时会对其进行合并批量更新。
+
+第一个参数传入函数就不会合并。
+
+
+this.refs 和 ReactDOM.findDOMNode的区别
+
+ref添加到Compoennt上获取的是Compoennt实例，添加到原生HTML上获取的是DOM；
+ReactDOM.findDOMNode，当参数是DOM，返回值就是该DOM；当参数是Component获取的是该Component render方法中的DOM
+二者主要区别在ref绑定在组件上的时候，this.refs获取到的是组件实例，ReactDOM.findDOMNode获取到的是dom节点。
+
+
+受控组件，和非受控组件：
+受控：使用state的管理的，比如input value加change
+非受控：1.必须手动操作dom，setState实现不了，2文件上传input file,获取文件名之类的 3富文本,需要操作dom。
+
+
+ReactDom.createPortal(<div>123</div>,body),将div渲染到body层级里，一般做fixed的时候，最好是放在最外层，兼容性会比较好
+
+14异步组件:
+const ContextDemo=React.lazy(()=>{import('async.js')})
+<React.Suspense fallback={<div>loading...</div>}><ContextDemo/></<React.Suspense>
+
+PureComponent和memo功能一样，只不过memo是针对函数组件，pure是针对class
+
+高阶组件，就是一个组件接受的参数为另一个组件，可以处理一些公用的逻辑；Redux的contact也是一种高阶组件
